@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+     Лаба №2
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+    h1 {
+        color:blue;
+        }
+    
+    .mystyle{
+        background-color:turquoise;
+        font-size: 31px;
+        
+        font-style: unset;
+    }
+    #yellow {
+        color:yellow;
+        font-size: 35px;
+        background-color: blue;
+    }
+
+    h2{
+        position:relative;
+        top: 10px;
+        left: 0px;
+        background: wheat;
+    }
+
+    h3 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+    
+    .float1 {
+    float: left; 
+    background: yellow; 
+    border: 2px solid blue;
+    padding: 10px;
+    margin-left: 20px;
+    width: 10%; 
+     }
+
+     .float2 {
+    float: left; 
+    background: blue; 
+    border: 4px solid yellow;
+    padding: 10px;
+    margin-left: 20px;
+    width: 10%; 
+     }
+     .float3{
+        float: none;
+        display: block;
+        position: relative; 
+        padding: 40px;
+     }
+     input[type=radio] + label {
+    color: black;
+    font-size: 30px;
+     }
+     input[type=radio]:checked:first-of-type + label{
+    font-size: 30px;
+    font-style: italic;
+    color: lawngreen;
+     }
+     input[type=radio]:checked:last-of-type + label{
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(0, 67, 252);
+    }
+    input[type=radio]:checked:nth-child(3n) + label{
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(252, 206, 0);
+    }
+    </style>
+</head>
+
+<body>
+<div style="color:violet; font-size:40px;">inline-описание (используется атрибут style);</div>
+<h1>с помощью контейнера в секции заголовка;</h1>
+<div class="mystyle">Используя селекторы CLASS</div>
+<div id="yellow"> ID, показать использование стилей</div>
+<h2>относительнее</h2>
+<h3>абсолютное</h3>
+<div class="float1">Плавающая модель</div>
+<div class="float2">Плавающая модель </div>
+
+<div class="float3"></div>
+<form>
+    <p>Выберите вариант</p>
+    <div>
+      <input type="radio" id="Choice1"
+       name="name" value="a1">
+      <label for="Choice1">Вариант №1</label>
+  
+      <input type="radio" id="Choice2"
+       name="name" value="a2">
+      <label for="Choice2">Вариант №2</label>
+  
+      <input type="radio" id="Choice3"
+       name="name" value="a3">
+      <label for="Choice3">Вариант №3</label>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
