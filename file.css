@@ -73,12 +73,13 @@ color: rgb(252, 206, 0);
 }
 
 #div1 {
-    width: fit-content;
+    width: auto;
     display: flex;
     background-color: gray;
+    align-items: center;
+    justify-content: center;
 }
 #div2 { 
-
     margin: 10px;
     width: fit-content;
     height: fit-content;
